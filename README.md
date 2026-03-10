@@ -87,3 +87,21 @@ Monitor model performance for drift
 Add jurisdiction-specific policy rules
 
 Integrate human review workflow
+
+## Architecture Diagram
+
+```mermaid
+flowchart TD
+
+A[User Chat Message] --> B[Prompt-Guided LLM Classifier]
+B --> C[Structured JSON Output]
+
+C --> D{Policy Rules}
+
+D -->|Low Risk| E[No Action / Monitor]
+D -->|Moderate Risk| F[Suggest Safer Gambling Tools]
+D -->|High Risk| G[Escalate to Human Review]
+
+G --> H[Responsible Gambling Team]
+
+
