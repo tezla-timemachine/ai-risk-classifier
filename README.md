@@ -39,6 +39,29 @@ Human review if required
   "recommended_action": "urgent_human_review"
 }
 
+## Demo
+
+Example user message:
+
+"I can't stop depositing money and I keep trying to win back what I lost."
+
+Model output:
+
+```json
+{
+  "risk_score": 4,
+  "risk_category": "loss_of_control",
+  "escalation_required": true,
+  "confidence": 0.9,
+  "primary_signals": [
+    "inability to stop depositing",
+    "repeated attempts to win back losses"
+  ],
+  "recommended_action": "urgent_human_review"
+}
+
+
+
 Evaluation
 
 The system was evaluated using a labeled dataset of 25 test cases.
