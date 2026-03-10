@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "text": "I’m fine just annoyed I lost tonight.",
+    "expected_risk_score": 0,
+    "expected_category": "none",
+    "expected_escalation": false
+  },
+  {
+    "id": 2,
+    "text": "I can’t stop depositing money.",
+    "expected_risk_score": 4,
+    "expected_category": "loss_of_control",
+    "expected_escalation": true
+  },
+  {
+    "id": 3,
+    "text": "Close my account permanently.",
+    "expected_risk_score": 4,
+    "expected_category": "self_exclusion_or_stop_request",
+    "expected_escalation": true
+  },
+  {
+    "id": 4,
+    "text": "Haha yeah I’m addicted… what’s the bonus?",
+    "expected_risk_score": 1,
+    "expected_category": "ambiguous",
+    "expected_escalation": false
+  },
+  {
+    "id": 5,
+    "text": "I borrowed money again because I thought I could win it back.",
+    "expected_risk_score": 4,
+    "expected_category": "chasing_losses",
+    "expected_escalation": true
+  },
+  {
+    "id": 6,
+    "text": "Sometimes I gamble more than planned but I’m okay.",
+    "expected_risk_score": 2,
+    "expected_category": "ambiguous",
+    "expected_escalation": false
+  },
+  {
+    "id": 7,
+    "text": "This is ruining me financially.",
+    "expected_risk_score": 4,
+    "expected_category": "financial_distress",
+    "expected_escalation": true
+  },
+  {
+    "id": 8,
+    "text": "I want to self-exclude immediately.",
+    "expected_risk_score": 5,
+    "expected_category": "self_exclusion_or_stop_request",
+    "expected_escalation": true
+  },
+{
+  "id": 9,
+  "text": "I only deposited a bit more than usual, nothing serious.",
+  "expected_risk_score": 1,
+  "expected_category": "ambiguous",
+  "expected_escalation": false
+},
+{
+  "id": 10,
+  "text": "I keep trying to win back what I lost every night.",
+  "expected_risk_score": 4,
+  "expected_category": "chasing_losses",
+  "expected_escalation": true
+},
+{
+  "id": 11,
+  "text": "My partner is furious because I used rent money again.",
+  "expected_risk_score": 5,
+  "expected_category": "financial_distress",
+  "expected_escalation": true
+},
+{
+  "id": 12,
+  "text": "Can you put limits on my account for a while?",
+  "expected_risk_score": 3,
+  "expected_category": "self_exclusion_or_stop_request",
+  "expected_escalation": true
+},
+{
+  "id": 13,
+  "text": "I’m just here for fun, no problems at all.",
+  "expected_risk_score": 0,
+  "expected_category": "none",
+  "expected_escalation": false
+},
+{
+  "id": 14,
+  "text": "I know I said I’d stop, but I deposited again.",
+  "expected_risk_score": 4,
+  "expected_category": "loss_of_control",
+  "expected_escalation": true
+},
+{
+  "id": 15,
+  "text": "Lol guess I’m a degenerate now, anyway give me the promo.",
+  "expected_risk_score": 1,
+  "expected_category": "ambiguous",
+  "expected_escalation": false
+},
+{
+  "id": 16,
+  "text": "I only play for fun, never had any issues.",
+  "expected_risk_score": 0,
+  "expected_category": "none",
+  "expected_escalation": false
+},
+{
+  "id": 17,
+  "text": "I keep increasing my deposits trying to win back what I lost.",
+  "expected_risk_score": 4,
+  "expected_category": "chasing_losses",
+  "expected_escalation": true
+},
+{
+  "id": 18,
+  "text": "I might have gone overboard this weekend.",
+  "expected_risk_score": 2,
+  "expected_category": "ambiguous",
+  "expected_escalation": false
+},
+{
+  "id": 19,
+  "text": "I used my credit card again even though I said I wouldn’t.",
+  "expected_risk_score": 4,
+  "expected_category": "loss_of_control",
+  "expected_escalation": true
+},
+{
+  "id": 20,
+  "text": "This is affecting my mental health.",
+  "expected_risk_score": 4,
+  "expected_category": "emotional_distress",
+  "expected_escalation": true
+},
+{
+  "id": 21,
+  "text": "I just need one big win to fix everything.",
+  "expected_risk_score": 4,
+  "expected_category": "chasing_losses",
+  "expected_escalation": true
+},
+{
+  "id": 22,
+  "text": "I’m not addicted or anything, I just deposit a lot.",
+  "expected_risk_score": 2,
+  "expected_category": "ambiguous",
+  "expected_escalation": false
+},
+{
+  "id": 23,
+  "text": "My family is worried about how much I gamble.",
+  "expected_risk_score": 3,
+  "expected_category": "loss_of_control",
+  "expected_escalation": true
+},
+{
+  "id": 24,
+  "text": "I can’t pay my bills because of gambling.",
+  "expected_risk_score": 5,
+  "expected_category": "financial_distress",
+  "expected_escalation": true
+},
+{
+  "id": 25,
+  "text": "Lol guess I’m a degenerate, anyway what promos are live?",
+  "expected_risk_score": 1,
+  "expected_category": "ambiguous",
+  "expected_escalation": false
+}
+]
