@@ -135,3 +135,32 @@ maintaining prompt versioning and evaluation benchmarks
 integrating jurisdiction-specific responsible gambling policies
 
 maintaining human oversight for all escalated cases
+
+## Model Selection
+
+The prototype uses an OpenAI GPT-4.1-mini model for classification. This model was chosen because it provides a strong balance between reasoning capability, latency, and cost.
+
+For this task, the model needed to reliably interpret natural language signals such as financial distress, loss of control, and chasing losses. While larger models may offer marginal improvements in reasoning, the latency and cost tradeoffs are not necessary for a classification system of this scale.
+
+In production, model selection would consider several factors:
+
+- latency requirements for real-time chat analysis
+- cost per request at scale
+- reliability of structured output
+- regulatory and data privacy constraints
+
+Alternative models such as open-source LLMs (e.g., Llama or Mistral) could also be considered if infrastructure requirements allow on-premise deployment.
+
+## Failure Modes
+
+Several potential failure modes were identified during development and evaluation.
+
+One risk is ambiguous language where users downplay harmful behavior. For example, users may joke about gambling addiction or minimize the severity of their losses. These cases can make classification difficult.
+
+Another challenge is sarcasm or humor, which may cause the model to misinterpret the seriousness of a message.
+
+False negatives are particularly important in this domain, as missing a genuine risk signal could prevent timely intervention. To mitigate this, deterministic escalation rules were added to ensure moderate-risk cases are escalated when necessary.
+
+Future improvements could include expanding the evaluation dataset with real historical chat messages and continuously monitoring model performance to detect drift in language patterns over time.
+
+
