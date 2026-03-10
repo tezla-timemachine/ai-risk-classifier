@@ -128,3 +128,15 @@ D -->|High Risk| G[Escalate to Human Review]
 G --> H[Responsible Gambling Team]
 
 
+## Project Structure
+
+ai-risk-classifier/
+
+├── risk_classifier.py        # Core LLM classification logic  
+├── run_eval.py               # Runs evaluation on test dataset  
+├── analyze_eval.py           # Identifies false positives and negatives  
+├── eval_cases.json           # Labeled evaluation dataset  
+├── test_cases.txt            # Additional test inputs  
+├── SYSTEM_DESIGN.md          # Architecture and system design document  
+├── requirements.txt          # Python dependencies  
+└── README.md                 # Project documentation
